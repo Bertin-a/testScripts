@@ -1,6 +1,6 @@
 ///<reference types="cypress"/>
 describe('Check UI Elements',()=>{
-    it.skip('Checking Radio Buttons', () => {
+    it('Checking Radio Buttons', () => {
         cy
         .visit('https://itera-qa.azurewebsites.net/home/automation')
 //Checking visibility of radio button
@@ -32,7 +32,7 @@ describe('Check UI Elements',()=>{
 
     });
 
-    it.skip('checking multiple checkbox', () => {
+    it('checking checkbox', () => {
         cy
         .visit('https://itera-qa.azurewebsites.net/home/automation')
 
@@ -66,7 +66,7 @@ describe('Check UI Elements',()=>{
         .should('not.be.checked')
     });
 
-    it.skip('Drop down', () => {
+    it('Drop down', () => {
         cy
         .visit('https://www.zoho.com/commerce/free-demo.html')
 
@@ -74,7 +74,7 @@ describe('Check UI Elements',()=>{
         .select('France')
         .should('have.value','France')
  });
-    it.skip('new site', () => {
+    it('new site', () => {
         cy
         .visit('https://www.dummyticket.com/dummy-ticket-for-visa-application/')
 
@@ -93,7 +93,7 @@ describe('Check UI Elements',()=>{
         
         
     });
-    it.skip('auto suggest drop down but static', () => {
+    it('auto suggest drop down but static', () => {
         cy
         .visit('https://www.wikipedia.org/')
         
