@@ -71,7 +71,7 @@ describe('Alerts in cypress',()=>{
         
     });
 
-    it.skip('Js Prompt using cancelled button', () => {
+    it('Js Prompt using cancelled button', () => {
         cy
         .visit('https://the-internet.herokuapp.com/javascript_alerts')
 
@@ -98,7 +98,7 @@ describe('Alerts in cypress',()=>{
         
     });
 
-    it.only('Authentication alert', () => {
+    it('Authentication alert', () => {
         //approach two passing the username and password in the url
         cy
         .visit('https://admin:admin@the-internet.herokuapp.com/basic_auth')
