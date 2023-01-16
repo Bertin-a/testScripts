@@ -83,7 +83,8 @@ describe('Handling Tables',()=>{
                 .get('.pagination>li:nth-child('+i+')').click()
                 cy
                 .wait(2000)
-                cy.get('table.table.table-bordered.table-hover>tbody>tr')
+                cy
+                .get('table.table.table-bordered.table-hover>tbody>tr')
                 .each(($row, index, $rows)=>{
                     cy.wrap($row).within(()=>{
                         cy
