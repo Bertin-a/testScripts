@@ -82,7 +82,7 @@ it('uploading multiple files', () => {
     .should('be.visible')
 });
 
-it.only('File upload shadow dom', () => {
+it('File upload shadow dom', () => {
     cy
     .visit('https://www.htmlelements.com/demos/fileupload/shadow-dom/index.htm')
 
