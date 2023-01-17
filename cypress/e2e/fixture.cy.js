@@ -4,7 +4,7 @@ describe('Fixtures demo',()=>{
 let userData
 
 beforeEach('Login',()=>{
-    cy.fixture().then((e)=>{
+    cy.fixture('orangehrm').then((e)=>{
         userData=e
     })
     
@@ -56,7 +56,8 @@ beforeEach('Login',()=>{
 
         cy
         .get('span[class="oxd-topbar-header-breadcrumb"]')
-        .should('be.visible').and('have.text', userData.expected)
+        .should('be.visible')
+        .and('have.text', userData.expected)
 
         
      })
