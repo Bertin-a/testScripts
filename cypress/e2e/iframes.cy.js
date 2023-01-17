@@ -46,7 +46,7 @@ describe('Handling Iframes',()=>{
         
     });
 
-    it.only('Apprach3 using cypress iframe plugin', () => {
+    it('Approach3 using cypress iframe plugin', () => {
         cy
         .visit('https://the-internet.herokuapp.com/iframe')
 
