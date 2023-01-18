@@ -3,17 +3,10 @@
 // describe('Fixtures demo',()=>{
 //     let userData;
 
-<<<<<<< Updated upstream
-beforeEach('Login',()=>{
-    cy.fixture().then((e)=>{
-        userData=e
-    })
-=======
 // before('Login',()=>{
 //     cy.fixture('orangehrm').then((data)=>{
 //         userData=data
 //     })
->>>>>>> Stashed changes
     
 // })
 // //Direct Access
@@ -99,12 +92,8 @@ describe('',()=>{
 
         cy
         .get('span[class="oxd-topbar-header-breadcrumb"]')
-<<<<<<< Updated upstream
-        .should('be.visible').and('have.text', userData.expected)
-=======
         .should('be.visible')
         .and('have.text','Dashboard')
->>>>>>> Stashed changes
 
         
     });
