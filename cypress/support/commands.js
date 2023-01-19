@@ -33,3 +33,22 @@ Cypress.Commands.add('getIframe',(iframe)=>{
     .then(cy.wrap)
 })
 
+
+//custom commands for clicking links using labels
+
+Cypress.Commands.add('clickLink',(label)=>{
+
+    cy.get('a').contains(label, {matchCase: false}).click()
+
+})
+
+
+//custom command for login
+
+Cypress.Commands.add('loginApp',(email,password)=>{
+    cy.get('#Email').type(email)
+    cy.get('#Password').type(password)
+    cy.get('button[class="button-1 login-button"]').click()
+
+
+})
