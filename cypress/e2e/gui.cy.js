@@ -107,7 +107,7 @@ describe('Check UI Elements',()=>{
         .click()
 
     });
-    it('Dynamic dropdown', () => {
+    it.only('Dynamic dropdown', () => {
         cy
         .visit('https://google.com')
         
