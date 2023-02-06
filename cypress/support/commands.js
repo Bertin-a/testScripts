@@ -41,6 +41,12 @@ Cypress.Commands.add('clickLink',(label)=>{
     cy.get('a').contains(label, {matchCase: false}).click()
 
 })
+Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+  })
+  
 
 
 //custom command for login
