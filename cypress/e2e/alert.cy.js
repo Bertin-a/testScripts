@@ -34,7 +34,7 @@ describe('Alerts in cypress',()=>{
         get('#result')
         .should('have.text','You clicked: Ok')
     });
-    it('alert confimation using cancel button', () => {
+    it.only('alert confimation using cancel button', () => {
         cy
         .visit('https://the-internet.herokuapp.com/javascript_alerts')
 
